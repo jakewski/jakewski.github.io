@@ -1,0 +1,41 @@
+nav {
+    background-color: rgba(37, 40, 61, 1);
+    height: 108px;
+}
+
+.graydiv {
+    background-color: rgb(233, 233, 233);
+}
+
+#jakub{
+    border-radius: 200px;
+    border-width: 5px;
+    border-style: double;
+    border-color: rgba(108, 89, 110, 1);
+    margin-top: 4%;
+    max-width: 80%;
+}
+
+.center-image{
+    text-align: center;
+}
+
+.head {
+    color: rgba(143, 57, 133, 1);
+}
+
+.arrows {
+    font-size: 40px;
+}
+
+.f4 {
+    font-size: 20px;
+}
+
+#contact{
+    margin-top: 150px;
+    text-align: center;
+    margin: 150px;
+    border-radius: 25px;
+    opacity: 0.8;
+}
