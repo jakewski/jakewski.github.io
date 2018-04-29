@@ -1,6 +1,5 @@
 nav {
     background-color: rgba(37, 40, 61, 1);
-    height: 108px;
 }
 
 .graydiv {
@@ -35,7 +34,8 @@ nav {
 #contact{
     margin-top: 150px;
     text-align: center;
-    margin: 150px;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 25px;
     opacity: 0.8;
 }
