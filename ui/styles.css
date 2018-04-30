@@ -6,6 +6,11 @@ nav {
     background-color: rgb(233, 233, 233);
 }
 
+.blackdiv {
+    background-color: rgba(37, 40, 61, 1);
+    color: rgb(233, 233, 233);
+}
+
 #jakub{
     border-radius: 200px;
     border-width: 5px;
