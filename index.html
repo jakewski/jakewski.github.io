@@ -32,13 +32,13 @@
       <nav>
         <div class="container">
           <div class="nav-wrapper">
-            <a href="#" class="brand-logo animated fadeInRight">Jakub <span class="hide-on-small-and-down">Grzegorzewski</span></a>
-            <ul class="right sidenav" id="nav-mobile">
+            <a href="#" class="left brand-logo animated fadeInRight">Jakub Grzegorzewski</a>
+            <ul class="right hide-on-med-and-down" id="nav-mobile">
               <li class="hide-on-small-only">
-                <a href="http://materializecss.com/collapsible.html">
-                  <i class="material-icons">arrow_back</i>
-                </a>
               </li>
+              <li><a id="life">Bio</a></li>
+              <li><a id="compsci">Computer Scientist</a></li>
+              <li><a id="software">Software Engineer</a></li>
             </ul>
           </div>
         </div>
@@ -56,7 +56,7 @@
       <div class="section graydiv">
         <div class="row container">
           <div class="col s12 m10 offset-m1">
-            <h2 class="head">Chicago
+            <h2 id="early" class="head">Chicago
               <i class="material-icons" style="font-size: 40px;">trending_flat</i>Harrisburg
               <i class="material-icons" style="font-size: 40px;">trending_flat</i>San Francisco</h2>
             <p class="grey-text text-darken-3 lighten-3">Born and raised in Chicago, I moved to Harrisburg to get my Bachelor's Degree in Computer Science. Now, I am
@@ -94,7 +94,7 @@
       <div class="section blackdiv">
         <div class="row container">
           <div class="col s12 m10 offset-m1">
-            <h2 class="head">Computer Scientist</h2>
+            <h2 id="CS" class="head">Computer Scientist</h2>
             <p class="light-text">I graduated Penn State Harrisburg with a 3.5 GPA and a degree in Computer Science.</p>
 
             <h4 class="light"><i class="material-icons"style="font-size: 40px;">assignment</i>Course Work</h4>
@@ -151,7 +151,7 @@
       <div class="section graydiv">
           <div class="row container">
             <div class="col s12 m10 offset-m1">
-              <h2 class="head">Software Engineer</h2>
+              <h2 id="SE" class="head">Software Engineer</h2>
               <!-- Prepare a container for your calendar. -->
               
               <p class="grey-text text-darken-3 lighten-3">I am a full stack developer that prefers to work with Node, Express, React, and PostgreSQL. However, I have experimented with other stacks as well, particularly Python based.</p>
@@ -173,36 +173,52 @@
                 <div class="row">
                   <div class="col s12 m6 l6">
                     <b>Languages:</b>
-                    <ul style="text-align: center;">
-                        <li>HTML5</li>
-                        <li>JavaScript ES6</li>
-                        <li>Java 8</li>
-                        <li>CSS3/SCSS</li>
-                        <li>Python3</li>
-                        <li>C++</li>
-                        <li>LISP / Scheme</li>
-                        <li>SQL</li>
-                        <li>C# (very little)</li>
-                      </ul>
+                    <div class="row">
+                      <div class="col s6 l6 m6">
+                        <ul>
+                          <li>HTML5</li>
+                          <li>JavaScript ES6</li>
+                          <li>Java 8</li>
+                          <li>CSS3/SCSS</li>
+                          <li>Python3</li>
+                        </ul>
+                      </div>
+                      <div class="col s6 l6 m6">
+                        <ul>
+                          <li>C++</li>
+                          <li>LISP / Scheme</li>
+                          <li>SQL</li>
+                          <li>C# (very little)</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                   <div class="col s12 m6 l6">
                     <b>Tools and Frameworks:</b>
-                    <ul style="text-align: center;">
-                      <li>Node.js</li>
-                      <li>React.js</li>
-                      <li>Express.js</li>
-                      <li>PostgreSQL</li>
-                      <li>Github</li>
-                      <li>Oracle</li>
-                      <li>jQuery</li>
-                      <li>Bootstrap, Materialize</li>
-                      <li>Socket.io</li>
-                      <li>Django</li>
-                      <li>Flask</li>
-                      <li>BeautifulSoup</li>
-                      <li>Unity3D</li>
-                      <li>Android Studio</li>
-                    </ul>
+                    <div class="row">
+                      <div class="col s6 l6 m6">
+                        <ul>
+                          <li>Node.js</li>
+                          <li>React.js</li>
+                          <li>Express.js</li>
+                          <li>PostgreSQL</li>
+                          <li>Github</li>
+                          <li>Oracle</li>
+                          <li>jQuery</li>
+                        </ul>
+                      </div>
+                      <div class="col s6 l6 m6">
+                        <ul>
+                          <li>Bootstrap, Materialize</li>
+                          <li>Socket.io</li>
+                          <li>Django</li>
+                          <li>Flask</li>
+                          <li>BeautifulSoup</li>
+                          <li>Unity3D</li>
+                          <li>Android Studio</li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="hide-on-med-and-down calendar">
@@ -270,10 +286,28 @@
       <script src="./js/jquery.timeago.min.js"></script>
       <script src="./js/materialize.js"></script>
       <script src="./js/init.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
       <script>
           new GitHubCalendar(".calendar", "jakewski");
+          $("#life").click(function() {
+              $('html, body').animate({
+                  scrollTop: $("#early").offset().top
+              }, 1000);
+              return false;
+          });
+          $("#compsci").click(function() {
+              $('html, body').animate({
+                  scrollTop: $("#CS").offset().top
+              }, 1000);
+              return false;
+          });
+          $("#software").click(function() {
+              $('html, body').animate({
+                  scrollTop: $("#SE").offset().top
+              }, 1000);
+              return false;
+          });
       </script>
-
     </main>
     <div class="sidenav-overlay"></div>
     <div class="drag-target"></div>
