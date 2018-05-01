@@ -55,7 +55,7 @@
       </div>
       <div class="section graydiv">
         <div class="row container">
-          <div class="col s12 m10 offset-m1">
+          <div id="earlysection" class="col s12 m10 offset-m1" style="visibility: hidden">
             <h2 id="early" class="head">Chicago
               <i class="material-icons" style="font-size: 40px;">trending_flat</i>Harrisburg
               <i class="material-icons" style="font-size: 40px;">trending_flat</i>San Francisco</h2>
@@ -93,7 +93,7 @@
       </div>
       <div class="section blackdiv">
         <div class="row container">
-          <div class="col s12 m10 offset-m1">
+          <div id="compsection" class="col s12 m10 offset-m1" style="visibility: none">
             <h2 id="CS" class="head">Computer Scientist</h2>
             <p class="light-text">I graduated Penn State Harrisburg with a 3.5 GPA and a degree in Computer Science.</p>
 
@@ -150,7 +150,7 @@
       </div>
       <div class="section graydiv">
           <div class="row container">
-            <div class="col s12 m10 offset-m1">
+            <div id="softsection" class="col s12 m10 offset-m1" style="visibility:none">
               <h2 id="SE" class="head">Software Engineer</h2>
               <!-- Prepare a container for your calendar. -->
               
@@ -306,6 +306,36 @@
                   scrollTop: $("#SE").offset().top
               }, 1000);
               return false;
+          });
+          if(window.innerHeight > $("#early").offset().top) {
+                  $("#earlysection").css("visibility", "");
+                  $('#early').addClass("animated fadeInLeft");
+                  $("#earlysection p").addClass("animated fadeIn");
+                  
+              }
+          $(window).scroll(function() {
+              var scroll = $(window).scrollTop();
+              if(scroll > $("#early").offset().top - window.innerHeight) {
+                  $("#earlysection").css("visibility", "");
+                  $('#early').addClass("animated fadeInLeft");
+                  $("#earlysection *").addClass("animated fadeIn");
+                  
+              }
+              if(scroll > $("#CS").offset().top - window.innerHeight - 100) {
+                  $("#compsection").css("visibility", "");
+                  $('#CS').addClass("animated fadeInLeft");
+                  $("#compsection *").addClass("animated fadeIn");
+              }
+              if(scroll > $("#SE").offset().top - window.innerHeight - 100) {
+                  $("#softsection").css("visibility", "");
+                  $('#SE').addClass("animated fadeInLeft");
+                  $("#softsection *").addClass("animated fadeIn");
+
+              }
+              if(scroll > $("#contact").offset().top - window.innerHeight - 100) {
+                  $('#contact').addClass("animated bounceInUp");
+              }
+              position = scroll;
           });
       </script>
     </main>
