@@ -48,3 +48,8 @@ nav {
 nav ul li:hover{
     background-color: rgba(143, 57, 133, 1);
 }
+
+#capstone{
+    width: 240px;
+    margin-top: 50px;
+}

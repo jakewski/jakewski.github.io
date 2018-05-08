@@ -137,16 +137,23 @@
             </div>
             <h4 class="light">
               <i class="material-icons" style="font-size: 40px;">grade</i>Senior Project</h4>
-            <p class="light-text">
-              I collaborated with 5 other students to create KittyPath, a Google Chrome extension meant to aggregate all of Penn State's
-              scheduling info into one place. We observed that the current scheduling site, LionPath, is slow and the user
-              must look in many different places to get the information they need. With KittyPath, the user installs the
-              extension, navigates to their LionPath Academic requirements once, and the extension pulls all of the relevant
-              information using a content script. The user can then view their requirements to graduate, look up courses
-              offered next semester, and even get recommendations based on what is available and their recommended academic
-              plan. Users can save courses for later, and have the extension directly inject the courses to their LionPath
-              schedule Builder.
-            </p>
+            <div class="row">
+              <div class="col s12 m4 l4" style="text-align: center;">
+                <img id="capstone" src="./ui/capstone.jpeg"></img>
+              </div>
+              <div class="col s12 m8 l8">
+                <p class="light-text">
+                  I collaborated with 5 other students to create KittyPath, a Google Chrome extension meant to aggregate all of Penn State's
+                  scheduling info into one place. We observed that the current scheduling site, LionPath, is slow and the user
+                  must look in many different places to get the information they need. With KittyPath, the user installs the
+                  extension, navigates to their LionPath Academic requirements once, and the extension pulls all of the relevant
+                  information using a content script. The user can then view their requirements to graduate, look up courses
+                  offered next semester, and even get recommendations based on what is available and their recommended academic
+                  plan. Users can save courses for later, and have the extension directly inject the courses to their LionPath
+                  schedule Builder. Won first place for Computer Science during the Penn State Harrisburg Capstone Design Conference 2018.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -169,18 +176,21 @@
               <h4 class="light">
                 <i class="material-icons" style="font-size: 40px;">favorite</i>Casual</h4>
               <h5 class="light center-image">Hackathon Winner</h5>
-              <b>HackPSU: HackHarassment prize.</b> Worked with 3 others to create a VR game that simulates a high stress environment.
-              Meant for people on the spectrum to use and develop coping mechanisms for the real world.
-              <br>
-              <br>
-              <b>FullStack Academy: Best Hack.</b> Worked alone to create a Chrome extension that skips Netflix introductions
-              and credits for you.
-              <br>
-              <br>
-              <b>YCPHacks: Embracing Aging Hacks.</b> Worked with two other developers to create a full stack web application,
-              Seniority. The app was designed to help elders find local help in the neighborhood for simple tasks like mowing
-              the lawn or moving furniture.
-              <h5 class="light center-image">Technology Addict</h5>
+              <p>
+                <b>HackPSU: HackHarassment prize.</b> Worked with 3 others to create a VR game that simulates a high stress environment.
+                Meant for people on the spectrum to use and develop coping mechanisms for the real world.
+                <br>
+                <br>
+                <b>FullStack Academy: Best Hack.</b> Worked alone to create a Chrome extension that skips Netflix introductions
+                and credits for you.
+                <br>
+                <br>
+                <b>YCPHacks: Embracing Aging Hacks.</b> Worked with two other developers to create a full stack web application,
+                Seniority. The app was designed to help elders find local help in the neighborhood for simple tasks like mowing
+                the lawn or moving furniture.
+                <h5 class="light center-image">Technology Addict</h5>
+
+              </p>
               <p class="grey-text text-darken-3 lighten-3">
                 I love looking for the next great tech. I spend time reading up on new updates and frameworks that I could use for my various
                 projects. Some of the things I have experience with include:
@@ -373,7 +383,7 @@
             $("#compsection *").addClass("animated fadeIn");
           }
           if (scroll > $("#SE").offset().top - window.innerHeight - 100) {
-            $("#casual").css("visibility", "");
+            $("#casual *").css("visibility", "");
             $('#SE').addClass("animated fadeInLeft");
             $("#casual *").addClass("animated fadeIn");
           }
