@@ -53,3 +53,18 @@ nav ul li:hover{
     width: 240px;
     margin-top: 50px;
 }
+
+td {
+    padding: 10px 5px;
+    font-size: 14px;
+}
+
+.moody-icon {
+    font-size: 72px;
+    float: left;
+    margin-right: 12px;
+}
+
+.cool-stuff {
+    
+}
