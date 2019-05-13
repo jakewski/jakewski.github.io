@@ -34,18 +34,18 @@ $("#hmu").click(function() {
     1000
   );
 });
-if (window.innerHeight > $("#early").offset().top) {
-  $("#earlysection").css("visibility", "");
-  $("#early").addClass("animated fadeInLeft");
-  $("#earlysection *").addClass("animated fadeIn");
-}
+
+$("#earlysection").css("visibility", "");
+$("#early").addClass("animated fadeInLeft");
+$("#earlysection *").addClass("animated fadeIn");
+
 $(window).scroll(function() {
   var scroll = $(window).scrollTop();
-  if (scroll > $("#early").offset().top - window.innerHeight) {
-    $("#earlysection").css("visibility", "");
-    $("#early").addClass("animated fadeInLeft");
-    $("#earlysection *").addClass("animated fadeIn");
-  }
+//   if (scroll > $("#early").offset().top - window.innerHeight) {
+//     $("#earlysection").css("visibility", "");
+//     $("#early").addClass("animated fadeInLeft");
+//     $("#earlysection *").addClass("animated fadeIn");
+//   }
   if (scroll > $("#CS").offset().top - window.innerHeight - 100) {
     $("#compsection").css("visibility", "");
     $("#CS").addClass("animated fadeInLeft");

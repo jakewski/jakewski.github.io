@@ -50,7 +50,7 @@ nav ul li:hover{
 }
 
 #capstone{
-    width: 240px;
+    width: 326px;
     margin-top: 50px;
 }
 
@@ -67,4 +67,21 @@ td {
 
 .cool-stuff {
     margin-top: 12px;
+}
+
+.header-div {
+    margin-top: 24px;
+}
+
+.sub-header {
+    margin: 0;
+    margin-top: 2px;
+}
+
+.arrow {
+    margin-right: 12px;
+}
+
+.header-icon {
+    font-size: 40px !important;
 }
